@@ -5,7 +5,7 @@ license: Apache-2.0
 compatibility: Requires Python 3.8+. Defuddle CLI is optional but strongly recommended. Network access to https://api.tavily.com required.
 metadata:
   author: stevenjj33
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # web-search

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "web-search",
   "displayName": "Web Search Free",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "给 Agent 一句话就能完成的网页调研：自动联网检索相关来源，逐篇取回可读正文，输出结构化文档供汇总。无需 API Key，无需 Bash。",
   "author": "stevenjj33",
   "icon": "icon.png",

@@ -143,18 +143,15 @@ Export the variable in your environment rather than referencing it.
 
 | Path | Read by | Purpose |
 | --- | --- | --- |
-| `plugin.json` | Agent Plugins 1.0 hosts, mcode 0.3.x, the repository validator | The portable manifest. |
-| `mcp.json` | the same | The portable MCP server definition (`node ./server.mjs`). |
-| `.claude-plugin/plugin.json` | Claude Code, mcode 0.4.0+ | The v0.4.0+ manifest, including the icon. |
+| `.minimax-plugin/plugin.json` | MiniMax Code, the Marketplace | The package entry point. |
+| `deepseek-search.mcp.json` | the same | The MCP server definition (`node ./server.mjs`). |
 | `icon.png` | hosts that support one | The DeepSeek mark, 512×512, transparent background. |
-| `skills/SKILL.md` | mcode 0.4.0+ | The Skill, top-level copy. |
-| `skills/deepseek-search/SKILL.md` | mcode 0.3.x, the validator | The Skill, byte-identical copy under a directory that matches its `name`. |
+| `skills/deepseek-search/SKILL.md` | the same | The Skill, under a directory that matches its `name`. |
 | `server.mjs` | the MCP server | The whole implementation. No dependencies. |
 
-Both manifest layouts ship in parallel so each runtime reads the one it prefers. The
-runtime picks its own manifest; on builds that read the portable root `plugin.json`
-first, the panel falls back to a generic icon — the icon is carried by the v0.4.0+
-manifest and by `icon.png`.
+This package ships the MiniMax Plugin layout only. The same plugin is also published in
+the portable Agent Plugins layout in the `main` branch of this repository, for hosts that
+prefer it.
 
 ## Reading pages
 

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "deepseek-search",
+  "displayName": "DeepSeek 搜索",
+  "version": "0.3.0",
+  "description": "一句话联网查资料：返回带标题、链接、相关性评分、发布日期与摘要的排序结果，也能把指定网页读成 Markdown 正文，方便直接引用原始出处。需要自备 DeepSeek API Key，插件包内不含任何凭据。",
+  "author": "stevenjj33",
+  "icon": "icon.png",
+  "category": "Productivity",
+  "exampleQueries": [
+    "搜索一下 DeepSeek 最新的 API 更新",
+    "帮我查今天这条新闻的原始出处",
+    "用 DeepSeek 搜索读一下这个网页讲了什么"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "deepseek-search.mcp.json"
+  ],
+  "skills": [
+    "skills/deepseek-search/SKILL.md"
+  ]
+}

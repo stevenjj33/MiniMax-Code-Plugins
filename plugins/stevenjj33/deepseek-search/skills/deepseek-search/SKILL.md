@@ -5,7 +5,7 @@ license: Apache-2.0
 compatibility: Requires Node.js 18+ (global fetch). Network access to https://api.deepseek.com is required. A DeepSeek API key must be available in DEEPSEEK_API_KEY before any tool call succeeds.
 metadata:
   author: stevenjj33
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # deepseek-search

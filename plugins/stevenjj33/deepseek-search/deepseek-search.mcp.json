@@ -1,11 +1,11 @@
 {
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "schemaVersion": 1,
   "mcpServers": {
     "deepseek-search": {
       "type": "stdio",
       "command": "node",
       "args": ["./server.mjs"],
-      "cwd": "${PLUGIN_ROOT}"
+      "description": "通过 DeepSeek 的 Search 与 Fetch API 检索网页，并读取指定网页的正文"
     }
   }
 }

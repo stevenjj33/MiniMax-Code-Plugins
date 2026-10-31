@@ -12,6 +12,8 @@ Usage:
 Env:
     TAVILY_API_KEY  (optional) — Bearer unless --use-keyless true.
 """
+from __future__ import annotations
+
 import argparse
 import json
 import os

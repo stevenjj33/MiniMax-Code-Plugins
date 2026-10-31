@@ -45,8 +45,8 @@ deepseek_fetch   {"url": "https://example.com/article"}
 it from `/plugins` → **Local**. MiniMax Code rescans the plugins directory on its own;
 no restart is needed for the manifest to be picked up.
 
-**Claude Code and other hosts.** Point them at this folder. The package ships two
-manifests so each runtime reads the one it prefers — see [Package layout](#package-layout).
+**Claude Code and other hosts.** The portable Agent Plugins layout of this same plugin is
+published in the `main` branch of this repository — point them at that one instead.
 
 Then configure the API key once, using any of the routes below.
 

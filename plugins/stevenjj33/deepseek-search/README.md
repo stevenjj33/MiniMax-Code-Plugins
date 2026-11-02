@@ -4,6 +4,11 @@ Search the web and read pages through **DeepSeek's own Search and Fetch APIs**, 
 inside your coding agent. A dependency-free stdio MCP server exposes two tools, and a
 Skill teaches the search operators and the search-then-fetch workflow.
 
+> **This is a third-party community plugin.** It is not affiliated with, endorsed by, or
+> supported by DeepSeek, and it ships none of DeepSeek's artwork or trademarks. It only
+> calls DeepSeek's public Search and Fetch endpoints, and you bring your own API key.
+> The bundled icon is an original mark drawn for this plugin.
+
 ## The problem
 
 Web search inside an agent usually means either a vendor API that needs a key and a
@@ -146,7 +151,7 @@ Export the variable in your environment rather than referencing it.
 | `plugin.json` | Agent Plugins 1.0 hosts, mcode 0.3.x, the repository validator | The portable manifest. |
 | `mcp.json` | the same | The portable MCP server definition (`node ./server.mjs`). |
 | `.claude-plugin/plugin.json` | Claude Code, mcode 0.4.0+ | The v0.4.0+ manifest, including the icon. |
-| `icon.png` | hosts that support one | The DeepSeek mark, 512×512, transparent background. |
+| `icon.png` | hosts that support one | The plugin's own mark, 512×512, transparent background. |
 | `skills/SKILL.md` | mcode 0.4.0+ | The Skill, top-level copy. |
 | `skills/deepseek-search/SKILL.md` | mcode 0.3.x, the validator | The Skill, byte-identical copy under a directory that matches its `name`. |
 | `server.mjs` | the MCP server | The whole implementation. No dependencies. |
@@ -207,5 +212,6 @@ responses, because an unchanged request would fail the same way.
 
 Apache-2.0
 
-The bundled `icon.png` is the DeepSeek mark (`File:DeepSeek-icon.svg` from Wikimedia
-Commons, MIT licence, © DeepSeek).
+The bundled `icon.png` is an original mark created for this plugin — a magnifying
+glass over a page, drawn by the plugin author. It contains no DeepSeek logo, trademark
+or artwork.

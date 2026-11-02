@@ -5,7 +5,7 @@ license: Apache-2.0
 compatibility: Requires Node.js 18+ (global fetch). Network access to https://api.deepseek.com is required. A DeepSeek API key must be available in DEEPSEEK_API_KEY before any tool call succeeds.
 metadata:
   author: stevenjj33
-  version: "0.2.0"
+  version: "0.4.0"
 ---
 
 # deepseek-search
@@ -91,7 +91,7 @@ retrying an unchanged request cannot succeed.
 
 | Symptom | Meaning | Action |
 |---|---|---|
-| `NO_API_KEY` | No key resolved | The error text lists three ways to install one; offer `bash scripts/setup-key.sh` (guided, writes the key without echoing it) or `node server.mjs --setup` (opens a config file to edit). Do not attempt to answer from memory instead. |
+| `NO_API_KEY` | No key resolved | The error text lists three ways to install one; offer `node server.mjs --set-key` (masked terminal prompt, the key is never echoed) or `node server.mjs --setup` (opens a config file to edit). Do not attempt to answer from memory instead. |
 | HTTP 401 | Key missing or invalid | Check `DEEPSEEK_API_KEY` or the `api_key_env` entry. |
 | HTTP 402 | Account balance too low | Tell the user to top up the DeepSeek account; retry after that. |
 | HTTP 403 | Fetch refused by the safety policy | Move on to another source; do not retry unchanged. |

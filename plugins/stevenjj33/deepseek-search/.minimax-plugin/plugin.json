@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "name": "deepseek-search",
-  "displayName": "DeepSeek 搜索",
-  "version": "0.3.0",
-  "description": "一句话联网查资料：返回带标题、链接、相关性评分、发布日期与摘要的排序结果，也能把指定网页读成 Markdown 正文，方便直接引用原始出处。需要自备 DeepSeek API Key，插件包内不含任何凭据。",
+  "displayName": "DeepSeek 搜索 · 社区版",
+  "version": "0.4.0",
+  "description": "第三方社区插件（非 DeepSeek 官方出品，与 DeepSeek 无隶属、背书或支持关系）：一句话联网查资料，返回带标题、链接、相关性评分、发布日期与摘要的排序结果，也能把指定网页读成 Markdown 正文，方便直接引用原始出处。需要自备 DeepSeek API Key，插件包内不含任何凭据。",
   "author": "stevenjj33",
   "icon": "icon.png",
   "category": "Productivity",

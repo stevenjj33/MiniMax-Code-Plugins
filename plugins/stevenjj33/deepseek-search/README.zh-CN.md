@@ -3,6 +3,10 @@
 在你的编程 Agent 里，直接用 **DeepSeek 自家的 Search 与 Fetch API** 联网搜索和读网页。
 一个零依赖的 stdio MCP server 暴露两个工具，一个 Skill 讲清搜索算子和「先搜后读」的工作流。
 
+> **本插件是第三方社区插件**，与 DeepSeek 官方无隶属、背书或支持关系，也不包含 DeepSeek 的
+> 任何美术素材或商标。它只调用 DeepSeek 公开的 Search 与 Fetch 接口，API key 由你自己提供。
+> 附带的图标是为本插件原创绘制的标识。
+
 ## 要解决的问题
 
 Agent 里的联网搜索通常只有两种做法：要么用一个需要 API key、还要额外 SDK 的厂商接口，要么用一个页面一旦是 JS 渲染就崩的抓取器。
@@ -129,7 +133,7 @@ node server.mjs --check
 | --- | --- | --- |
 | `.minimax-plugin/plugin.json` | MiniMax Code、插件市场 | 包入口。 |
 | `deepseek-search.mcp.json` | 同上 | MCP server 定义（`node ./server.mjs`）。 |
-| `icon.png` | 支持图标的宿主 | DeepSeek 标识，512×512，透明背景。 |
+| `icon.png` | 支持图标的宿主 | 插件自有的几何标识，512×512，透明背景。 |
 | `skills/deepseek-search/SKILL.md` | 同上 | Skill，放在与其 `name` 同名的目录下。 |
 | `server.mjs` | MCP server | 全部实现，无任何依赖。 |
 
@@ -181,4 +185,5 @@ server 会对 HTTP 408、429 和 5xx 做退避重试，其他 4xx 不重试 —�
 
 Apache-2.0
 
-附带的 `icon.png` 是 DeepSeek 标识（`File:DeepSeek-icon.svg`，来自 Wikimedia Commons，MIT 许可，© DeepSeek）。
+附带的 `icon.png` 是本插件作者原创绘制的几何标识（放大镜与网页线条），
+不含任何 DeepSeek 官方 logo、商标或美术素材。
